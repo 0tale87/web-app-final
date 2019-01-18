@@ -1,2 +1,2 @@
-text = "text"
-puts text.upcase
+@text = "text".upcase
+puts @text
