@@ -5,7 +5,7 @@ class EditorController < ApplicationController
     @text = params['text']
 
     if @text.present?
-      @html = Document.new(@text).upcase
+      @html = @text.gsub(/えっと|えーっと|そのー/,'')
     else
       @html = ''
     end
